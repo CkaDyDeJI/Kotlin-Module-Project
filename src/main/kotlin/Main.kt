@@ -1,7 +1,10 @@
+import Components.Storage
 
-fun main(args: Array<String>) {
+fun main(args: Array<String>)
+{
+    val storage = Storage()
 
-    ArchiveStorage.drawArchiveMap()
-
+    val processor = CycleProcessor(storage)
+    processor.process()
 }
 
